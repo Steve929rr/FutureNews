@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Newspaper Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Milky Way Gazette</h1>
+    <p id="future-date"></p>
+
+  </header>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="governance.html">Governance</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="tech.html">Tech</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="stewardship.html">Stewardship</a></li>
+      <li><a href="travel.html">Travel</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <article>
+      <h2>Sol Selection</h2>
+      <p>The biggest events this week in the Home System</p>
+      <button onclick="toggleArticle(this)">Read More</button>
+      <div class="fullArticle hidden">
+        <p>This is the full article content. It is hidden until you click "Read More".</p>
+      </div>
+    </article>
+    
+    <article>
+      <h2>Earnestly Earth</h2>
+      <p>The What's What on our home world</p>
+      <button onclick="toggleArticle(this)">Read More</button>
+      <div class="fullArticle hidden">
+        <p>This is the full article content. It is hidden until you click "Read More".</p>
+      </div>
+    </article>
+
+    <article id="photo-of-the-day">
+      <h2>First Footsteps</h2>
+      <img src="otherworldly.jpg" alt="Stunning landscape" />
+      <p class="caption">first steps on planet X</p>
+    </article>
+
+    <article>
+      <h2>Galaxy Gobbly Gook</h2>
+      <p>The newest transmissions from our probes and frontier explorers</p>
+
+    </article>
+  </main>
+
+  <footer>
+  <p>
+    Submit your articles for peer approval on our Ethereum zkIHeartReading L2.<br />
+    Contract address: <code>0x4a7b3eC6D5F8Ef12345bF7eEAA223Bc3dE19a0B9</code>
+  </p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Newspaper Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Travel & Leisure</h1>
+    <p id="future-date"></p>
+
+  </header>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Front Page</a></li>
+      <li><a href="governance.html">Governance</a></li>
+      <li><a href="sports.html">Sports</a></li>
+      <li><a href="tech.html">Tech</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="stewardship.html">Stewardship</a></li>
+      <li><a href="travel.html">Travel</a></li>
+    </ul>
+  </nav>
+
+
+  <main>
+    <article>
+      <h2>Trappist Tribulations</h2>
+      <p>Hello, Earthlings. I hope this finds you well. I hope you enjoy this brief overview
+         of the challenges and triumphs faced by the intrepid explorers of the Trappist system.
+      </p>
+      <button onclick="toggleArticle(this)">Read More</button>
+      <div class="fullArticle hidden">
+        <p>
+          Initial landings were nearly catastrophic: solar flare exposure, equipment malfunctions, and a food synthesis 
+          bug that turned protein into something... rubbery. But perseverance (and clever engineering) won out. 
+          Now, terra-gardens bloom in pressurized lava tubes, and interworld rail shuttles link the inner rocky worlds.
+        </p>
+        <p>
+          The biggest surprise? The microbial mats discovered beneath TRAPPIST-1e’s polar ice — dormant, ancient, and 
+          possibly alien. Cautious study continues, but one thing is clear: we are not just surviving here. We are 
+          writing the next chapter of human civilization, one harsh sunrise at a time.
+        </p>
+      </div>
+    </article>
+    
+    <article>
+      <h2>Entirely Earth</h2>
+      <p>Hello, Fans! Yes, Its your favorite Earth based travel blogger!
+         This week we went rafting on the Amazon River, and it was a blast!
+      </p>
+      <button onclick="toggleArticle(this)">Read More</button>
+      <div class="fullArticle hidden">
+        <p>
+          This week’s adventure took me down the *Neo-Amazon Restoration Corridor* — a rewilded stretch of the original river basin 
+          that’s now teeming with genetically restored megafauna. Picture: a canoe ride past luminous orchid trees, engineered 
+          to glow at night and guide travelers. We even spotted a pair of mirror-panthers stalking along the banks — elegant, quiet, and only mildly curious about us.
+        </p>
+        <p>
+          The highlight? A two-day raft drift with a local eco-culture tribe who live in suspended canopy villages. We cooked protein-spiral fruit over solar stones 
+          and listened to old Earth myths fused with AI-assisted storytelling drones. A gentle reminder: no neural links for the full experience. Disconnect and drift.
+        </p>
+      </div>
+    </article>
+
+    <article id="photo-of-the-day">
+      <h2>Stunning</h2>
+      <img src="SaturnCruise.jpg" alt="Ringside View" />
+      <p class="caption">Ringside View</p>
+    </article>
+
+    <article>
+      <h2>Saturn Cruise</h2>
+      <p>A breathtaking journey through the rings of Saturn. Experience the awe-inspiring beauty of this gas giant and its mesmerizing ring system.</p>
+      <p>As we glided through the ethereal landscape, the play of light on the icy particles 
+         created a celestial ballet, a reminder of the universe's grandeur.  On the way we 
+         encountered a stunning array of colors and textures, each more captivating than the last.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+  <p>
+    Submit your articles for peer approval on our Ethereum zkIHeartReading L2.<br />
+    Contract address: <code>0x4a7b3eC6D5F8Ef12345bF7eEAA223Bc3dE19a0B9</code>
+  </p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

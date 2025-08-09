@@ -1,0 +1,90 @@
+body {
+  font-family: Georgia, serif;
+  background-color: blue;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1em;
+  background-color: rgb(5, 40, 179);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
+}
+
+article {
+  background-color: rgb(5, 40, 179);
+  border: 1px solid #5a0be3;
+  padding: 1em;
+  flex: 1 1 calc(33% - 2em); /* 3 columns */
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+#photo-of-the-day {
+  flex: 1 1 calc(50% - 2em); /* narrower than normal article */
+}
+
+#photo-of-the-day img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.5em auto;
+  border-radius: 8px;
+}
+
+.caption {
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+
+
+h2 {
+  margin-top: 0;
+}
+
+footer {
+  font-size: 0.8em;
+}
+nav {
+  background-color: #0b18a1;
+  padding: 0.75em 1em;
+  margin-bottom: 1em;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5em;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #00ccff;
+}
